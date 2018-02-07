@@ -1,9 +1,11 @@
 require 'httparty'
 require 'json'
+require_relative 'messaging'
 require_relative 'roadmap'
 
 class Kele
   include HTTParty
+  include Messaging
   include Roadmap
   base_uri 'https://www.bloc.io/api/v1'
 
