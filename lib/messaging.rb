@@ -15,7 +15,7 @@ module Messaging
     end
   end
 
-  def create_message(recipient_id, subject, text)
+  def create_message(recipient_id,  text, subject = "")
     url = '/messages'
     options = {
       body: {
